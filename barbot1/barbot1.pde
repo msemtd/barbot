@@ -24,7 +24,7 @@ int fctr;
 
 public void setup() {
 
-  size(640, 480, JAVA2D);
+  size(640, 480, P2D);
   G4P.setGlobalColorScheme(GCScheme.ORANGE_SCHEME);
   G4P.setCursor(ARROW);
   if (frame != null)
@@ -77,9 +77,7 @@ public void setup() {
   b = new GButton(this, x, y+40, sbw, 18, "off");
   b.tagNo = 2000 + 10 + snum;
   }
-  // bottle
-  bottle = loadShape("glass-1.svg");
-  
+  // serial drop-down...
   x = width - 144; 
   y = 5;
   portList = new GDropList(this, x, y, 90, 96, 5);
