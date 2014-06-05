@@ -9,9 +9,6 @@ GTextField txf1, txf2;
 GButton[] btnColours = new GButton[8];
 GDropList portList;
 
-
-
-PShape bottle;
 PFont font;
 
 Serial ser;
@@ -24,7 +21,7 @@ int fctr;
 
 public void setup() {
 
-  size(640, 480, P2D);
+  size(640, 480, P3D);
   G4P.setGlobalColorScheme(GCScheme.ORANGE_SCHEME);
   G4P.setCursor(ARROW);
   if (frame != null)
@@ -96,8 +93,7 @@ public void setup() {
 
 public void draw() {
   background(255, 255, 190);
-  // draw glass posn - ease into chosen track location - feedback required
-  shape(bottle, 280, 40);
+  
   fill(255, 204, 0);
   text("BarBot", 50, 150);
 
